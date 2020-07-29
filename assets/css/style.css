@@ -2883,7 +2883,7 @@ hr {
 /* line 893, C:/Users/HP/Desktop/jun-2020/277.NTAS /assets/scss/_common.scss */
 .footer-padding {
   padding-top: 160px;
-  padding-bottom: 120px;
+  padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3252,7 +3252,7 @@ hr {
 .main-header {
   position: relative;
   z-index: 3;
-  -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  /* -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1); */
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -3271,7 +3271,7 @@ hr {
 
 /* line 161, C:/Users/HP/Desktop/jun-2020/277.NTAS /assets/scss/_headerMenu.scss */
 .main-header .main-menu ul li a {
-  color: #072366;
+  color: #000000;
   font-weight: 400;
   padding: 39px 19px;
   display: block;
@@ -3299,7 +3299,7 @@ hr {
 .main-header .main-menu ul ul.submenu {
   position: absolute;
   width: 170px;
-  background: rgba(0, 12, 32, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   left: 0;
   top: 90%;
   visibility: hidden;
@@ -4920,6 +4920,11 @@ hr {
 /* line 160, C:/Users/HP/Desktop/jun-2020/277.NTAS /assets/scss/_footer.scss */
 .footer-bottom-area .footer-social > a:hover {
   color: #e9a30d;
+}
+.qwe{
+  margin: 15px;
+  height: 46px;
+  width: 46px;
 }
 
 /* line 3, C:/Users/HP/Desktop/jun-2020/277.NTAS /assets/scss/_blog_page.scss */
@@ -6609,6 +6614,8 @@ hr {
 /* line 57, C:/Users/HP/Desktop/jun-2020/277.NTAS /assets/scss/_contact.scss */
 .form-contact .form-group {
   margin-bottom: 30px;
+  /* margin-left: 25px;
+  margin-right: 25px; */
 }
 
 /* line 61, C:/Users/HP/Desktop/jun-2020/277.NTAS /assets/scss/_contact.scss */
