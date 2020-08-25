@@ -428,6 +428,30 @@ hr {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .kisan-mob {
+    
+    
+    display: block;
+  margin-left: auto;
+  margin-right: 50px;
+  width: 50%;
+    
+  }
+  .kisan-logo {
+    
+    display: none;
+    
+  }
+  
+}
+@media only screen and (min-width: 600px){
+  .kisan-logo1{
+    display: none;
+  }
+
+}
+
 
 /* owl-carousel button style */
 /* line 194, C:/Users/HP/Desktop/jun-2020/277.NTAS /assets/scss/_common.scss */
