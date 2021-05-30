@@ -18,6 +18,11 @@
         "source": "/OrderNow",
         "destination": "/farmUncle",
         "type": 301
+      },
+      {
+        "source": "/discord",
+        "destination": "https://discord.gg/PEFQaUBdsD",
+        "type": 301
       }
     ],
     "ignore": [
