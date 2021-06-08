@@ -8,6 +8,12 @@
   "hosting": {
     "public": "public",
     "cleanUrls": true,
+    
+    "rewrites": [{
+      "source": "/verifyCertificate",
+      "function": "verifyCertificate"
+    }],
+
     "redirects": [
       {
         "source": "/ordernow",
