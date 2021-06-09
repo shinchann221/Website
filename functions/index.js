@@ -89,4 +89,4 @@ app.get('/:id', async (req, res) => {
 //     });
 //   });
 
-exports.verifyCertificate = functions.https.onRequest(app);
+exports.verifyCertificate = functions.region('asia-south1').https.onRequest(app);
