@@ -1,23 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>NT VERIFY</title>
+    <meta charset="UTF-8" />   
+    <title>Verify Certificate</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/neemLogo.png">
+    <meta property="og:image" content="">
+    <meta name="twitter:title" content="">
+    <meta property="og:type" content="website">
+    <meta name="description" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- lottie player script -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/certificatestyle.css">
 </head>
 <body>
-  <h1>NT VERIFY</h1>
-  <form id="_form" method="get">
-    <input id="_id" name="id" type="text" placeholder="ENTER CERTIFICATE NUMBER"></input>
-  <button name="btn" type="submit">VERIFY</button>
-  </form>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQJ2TWR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/neemLogo.png" alt="Neem Tree">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-bottom">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-4 col-lg-4">
+                                <div class="logo">
+                                    <a href="index.html" style="display: inline-block;"><img src="assets/img/main.png" alt="logo" 
+                                            style="width: 220px;;"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="ntaal.html"
+                                                        style="border: 3px solid #dad8d8;padding:15px">NT-AAL</a></li>
+                                                <li><a href="#">Services</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="nt-kisan.html">Service for Farmers</a></li>
+                                                        <li><a href="farmUncle.html">Service for Consumers</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">About Us</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="aboutUs.html">Company</a></li>
+                                                        <li><a href="investorPanel.html">Investor Panel</a></li>
+                                                        <li><a href="contactUs.html">Contact Us</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href=" https://neemtreespeaks.home.blog/" alt="Blog">Blogs</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <div class="certificate-container">
+        <div style="width: 40%;">
+            <lottie-player class="anim" src="https://assets7.lottiefiles.com/packages/lf20_th33qbeo.json" mode="bounce" background="transparent"  speed="0.8"  style="width: 500px; height: 400px;"  loop autoplay></lottie-player>
+        </div>
+        <div class="certificate">
+            <div class="head_id">
+                <h2 style="font-size: 35px; margin: 15px;">Enter your certificate ID to validate your certificate</h2>
+                <input type="text" id="id"><br> 
+                <button class="cert_btn" id="btn">Get Certificate</button>
+            </div>
+            <div>
+                <div class="info-container">
+                    <div class="labels">
+                        <div class="data hide">    
+                            <h2>Name:&nbsp</h2>
+                        </div> 
+                        <div class="data hide">
+                            <h2>Department:&nbsp</h2>
+                        </div> 
+                        <div class="data hide">
+                            <h2>Type:&nbsp</h2>
+                        </div> 
+                        <div class="data hide">
+                            <h2>From:&nbsp</h2>
+                        </div> 
+                        <div class="data hide">
+                            <h2>To:&nbsp</h2>
+                        </div> 
+                    </div>
 
-<!-- to show validation result -->
-  <h2>Result</h2>
-  <p id="_status"  class="status"></p>
-  </div>
-  <script src="../functions/index.js"></script>
+                    <div class="info">
+                        <div style="color: #fff;" class="data hide">    
+                            <h2>NAME</h2>
+                        </div> 
+                        <div class="data hide">
+                            <h2>DEPT</h2>
+                        </div> 
+                        <div class="data hide">
+                            <h2>TYPE</h2>
+                        </div> 
+                        <div class="data hide">
+                            <h2>FROM</h2>
+                        </div> 
+                        <div class="data hide">
+                            <h2>TO</h2>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper section-bg2">
+            <!-- Footer Top-->
+            <div class="footer-area footer-padding">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="single-footer-caption mb-30">
+                                    <div class="footer-tittle">
+                                        <div class="footer-logo mb-20">
+                                            <a href="#">
+                                                <h3>Copyright Â© Neem Tree Agro Solutions 2020</h3>
+                                            </a>
+                                            <br>
+                                            <a href="contactUs.html">
+                                                <h3>Contact Us</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-30">
+                                <div class="footer-tittle">
+                                    <div class="footer-logo mb-20">
+                                        <a href="digitalAnalytics.html">
+                                            <h3>Digital Analytics</h3>
+                                        </a>
+                                        <a href="digitalAnalytics.html">
+                                            <h5 style="color:#ec7b10;">Digital Analytics</h5>
+                                        </a>
+                                        <br>
+                                        <a href="dml.html">
+                                            <h3>Direct Market Linkage</h3>
+                                        </a>
+                                        <a href="dml.html">
+                                            <h5 style="color:#ec7b10;">Farm to Fork Network</h5>
+                                        </a>
+                                        <br>
+                                        <a href="themeFinTech.html">
+                                            <h3>FinTech</h3>
+                                        </a>
+                                        <a href="themeFinTech.html">
+                                            <h5 style="color:#ec7b10;">Financial Aid</h5>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-30">
+                                <div class="footer-tittle">
+                                    <div class="footer-logo mb-20">
+                                        <a href="skillDev.html">
+                                            <h3>Skill Development</h3>
+                                        </a>
+                                        <a href="skillDev.html">
+                                            <h5 style="color:#ec7b10;">Education, Innovation</h5>
+                                        </a>
+                                        <br>
+                                        <a href="marketPlace.html">
+                                            <h3>Market Place for Farmers</h3>
+                                        </a>
+                                        <a href="marketPlace.html">
+                                            <h5 style="color:#ec7b10;">Market Access &
+                                                Realization</h5>
+                                        </a>
+                                        <br>
+                                        <a href="storage.html">
+                                            <h3>Storage</h3>
+                                        </a>
+                                        <a href="storage.html">
+                                            <h5 style="color:#ec7b10;">Cold Storage</h5>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-title">
+                                    <a href="farmUncle.html">
+                                        <h3>Farm Uncle</h3>
+                                    </a>
+                                    <a href="farmUncle.html">
+                                        <h5 style="color:#ec7b10;">Service for Urban
+                                            Customer</h5>
+                                    </a>
+                                    <br>
+                                    <a href="nt-kisan.html">
+                                        <h3>Neem Tree</h3>
+                                    </a>
+                                    <a href="nt-kisan.html">
+                                        <h5 style="color:#ec7b10;">Service for Farmers</h5>
+                                    </a>
+                                </div>
+                                <!-- Form -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <a href="https://www.facebook.com/neemtreeagrosolutions"><img src="assets/img/Social Icons/Facebook.svg"
+                    alt="Facebook" class="img-fluid qwe"></a>
+            <a href="https://www.instagram.com/neemtreeagro/"><img src="assets/img/Social Icons/Instagram.svg"
+                    alt="Instagram" class="img-fluid qwe"></a>
+            <a href=" https://www.linkedin.com/company/neemtree-agro-solution/"><img
+                    src="assets/img/Social Icons/Linkedin.svg" alt="Linkedin" class="img-fluid qwe"></a>
+            <a href="https://twitter.com/NeemTreeAgro"><img src="assets/img/Social Icons/Twitter.svg" alt="Twitter"
+                    class="img-fluid qwe"></a>
+
+        </div>
+        </div>
+    </footer>
+
+    <script src="/__/firebase/8.6.5/firebase-app.js"></script>
+    <script src="/__/firebase/8.6.5/firebase-functions.js"></script>
+    <script src="/__/firebase/8.6.5/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script> 
+    <script src="./assets/js/script.js"></script>
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="./assets/js/jquery.barfiller.js"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
