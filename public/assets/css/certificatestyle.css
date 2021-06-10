@@ -15,6 +15,7 @@ body {
 }
 
 .certificate {
+  position: relative;
   background-image: linear-gradient(rgba(3, 67, 71, 0.9) , rgba(3, 67, 71, 0.6));
   color: #fff;
   border-radius: 10px;
@@ -95,9 +96,11 @@ body {
 }
 
 .anim {
-  transform: scale(1.8);
+  width: 50%;
+  max-width: 100%;
   transform-origin: left;
   left: 20px;
+  margin: auto;
 }
 
 #id {
