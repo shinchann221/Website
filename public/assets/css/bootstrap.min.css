@@ -8290,31 +8290,53 @@ a.text-dark:hover {
 
 /* ========== */
 .socials {
-    margin-left: 50px;
+  margin-left: 50px;
+  margin-bottom: 0;
 }
 
 .buttons {
-    text-align: center;
+  text-align: center;
 }
 
 .border-1 {
-    border: 1px solid #eee;
+  border: 1px solid #eee;
 }
 
 .team {
-    display: flex;
-    padding: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .team-img {
-    width: 15%;
-    height: 15%;
+  width: 15%;
+  height: 15%;
 }
 
 .team-body {
-    padding-left: 50px;
-    padding-top: 10px;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.slide-banner-left {
+  margin-top: auto;
+  z-index: 100;
+  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5);
+  transform: translateX(-150%) scale(1.2);
+  transition: transform 0.7s ease;
+}
+
+.slide-banner-left.show {
+  transform: translateX(0);
+}
+
+.slide-banner-right {
+  transform: translateX(100%);
+  transition: transform 0.7s ease;
+}
+
+.slide-banner-right.show {
+  transform: translateX(0);
 }
 /* ========== */
 
