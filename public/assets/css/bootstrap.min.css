@@ -8323,7 +8323,7 @@ a.text-dark:hover {
 .slide-banner-left {
   margin-top: auto;
   z-index: 100;
-  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5); */
   transform: translateX(-150%) scale(1.2);
   transition: transform 0.7s ease;
 }
@@ -8334,11 +8334,60 @@ a.text-dark:hover {
 
 .slide-banner-right {
   transform: translateX(100%);
-  transition: transform 0.7s ease;
+  transition: transform 1s ease;
 }
 
 .slide-banner-right.show {
-  transform: translateX(0);
+  transform: translateX(-100%);
+}
+
+.mediaBtn {
+  text-decoration: none;
+  padding: 13px 15px;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.mediaBtn.facebook {
+  color: #4267B2;
+  border: 3px solid #4267B2;
+}
+
+.mediaBtn.facebook:hover {
+  background-color: #4267B2;
+  color: #fff;
+}
+
+.mediaBtn.instagram {
+  color:  #E1306C;
+  border: 3px solid #E1306C;
+}
+
+.mediaBtn.instagram:hover {
+  background-color: #E1306C;
+  color: #fff;
+}
+
+.mediaBtn.twitter {
+  color:  #1DA1F2;
+  border: 3px solid #1DA1F2;
+}
+
+.mediaBtn.twitter:hover {
+  background-color: #1DA1F2;
+  color: #fff;
+}
+
+.mediaBtn.linkdin {
+  color:  #2867B2;
+  border: 3px solid #2867B2;
+}
+
+.mediaBtn.linkdin:hover {
+  background-color: #2867B2;
+  color: #fff;
 }
 /* ========== */
 
