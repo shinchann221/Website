@@ -8320,10 +8320,9 @@ a.text-dark:hover {
   padding-top: 10px;
 }
 
-.slide-banner-left {
+/* .slide-banner-left {
   margin-top: auto;
   z-index: 100;
-  /* box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5); */
   transform: translateX(-150%) scale(1.2);
   transition: transform 0.7s ease;
 }
@@ -8338,8 +8337,33 @@ a.text-dark:hover {
 }
 
 .slide-banner-right.show {
-  transform: translateX(-100%);
+  margin: auto;
+  cursor: pointer;
+  transform: translateX(0%);
 }
+
+.digital {
+  transition: transform 0.3s;
+}
+
+.slide-banner-1:hover .digital {
+  transform: scale(1.1) translateX(-2%);;
+}
+
+.trapezium-right {
+	border-bottom: 45vw solid #f15413;
+	border-left: 8.5vw solid transparent;
+	height: 0;
+	width: 100%;
+} */
+  /* 
+  .clickbanner {
+    transition: transform 0.3s;
+  }
+
+  .clickbanner:hover {
+    transform: scale(1.05);
+  } */
 
 .mediaBtn {
   text-decoration: none;
@@ -8351,42 +8375,42 @@ a.text-dark:hover {
 }
 
 .mediaBtn.facebook {
-  color: #4267B2;
-  border: 3px solid #4267B2;
+  color: #4267b2;
+  border: 3px solid #4267b2;
 }
 
 .mediaBtn.facebook:hover {
-  background-color: #4267B2;
+  background-color: #4267b2;
   color: #fff;
 }
 
 .mediaBtn.instagram {
-  color:  #E1306C;
-  border: 3px solid #E1306C;
+  color: #e1306c;
+  border: 3px solid #e1306c;
 }
 
 .mediaBtn.instagram:hover {
-  background-color: #E1306C;
+  background-color: #e1306c;
   color: #fff;
 }
 
 .mediaBtn.twitter {
-  color:  #1DA1F2;
-  border: 3px solid #1DA1F2;
+  color: #1da1f2;
+  border: 3px solid #1da1f2;
 }
 
 .mediaBtn.twitter:hover {
-  background-color: #1DA1F2;
+  background-color: #1da1f2;
   color: #fff;
 }
 
 .mediaBtn.linkdin {
-  color:  #2867B2;
-  border: 3px solid #2867B2;
+  color: #2867b2;
+  border: 3px solid #2867b2;
 }
 
 .mediaBtn.linkdin:hover {
-  background-color: #2867B2;
+  background-color: #2867b2;
   color: #fff;
 }
 
@@ -8431,13 +8455,14 @@ a.text-dark:hover {
   font-size: 25px;
   font-weight: bold;
   position: absolute;
+  text-align: right;
   right: 0;
-  top: 35%;
+  margin: 0 auto;
 }
 
 /* GALLERY SLIDER */
 
-.gallery-slider{
+.gallery-slider {
   width: 800px;
   height: 500px;
   border-radius: 10px;
@@ -8446,30 +8471,30 @@ a.text-dark:hover {
   margin: 0 auto;
 }
 
-.gallery-slides{
+.gallery-slides {
   width: 500%;
   height: 500px;
   display: flex;
 }
 
-.gallery-slides input{
+.gallery-slides input {
   display: none;
 }
 
-.gallery-slide{
+.gallery-slide {
   width: 20%;
   transition: 2s;
   /* border: 3px solid #ec7b10; */
 }
 
-.gallery-slide img{
+.gallery-slide img {
   width: 800px;
   height: 500px;
 }
 
 /*css for manual slide navigation*/
 
-.navigation-manual{
+.navigation-manual {
   position: absolute;
   width: 800px;
   margin-top: -40px;
@@ -8477,7 +8502,7 @@ a.text-dark:hover {
   justify-content: center;
 }
 
-.manual-btn{
+.manual-btn {
   border: 2px solid #ec7b10;
   padding: 5px;
   border-radius: 10px;
@@ -8485,33 +8510,33 @@ a.text-dark:hover {
   transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
   margin-right: 40px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
   background: #ec7b10;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked ~ .first {
   margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked ~ .first {
   margin-left: -20%;
 }
 
-#radio3:checked ~ .first{
+#radio3:checked ~ .first {
   margin-left: -40%;
 }
 
-#radio4:checked ~ .first{
+#radio4:checked ~ .first {
   margin-left: -60%;
 }
 
 /*css for automatic navigation*/
 
-.navigation-auto{
+.navigation-auto {
   position: absolute;
   display: flex;
   width: 800px;
@@ -8519,30 +8544,30 @@ a.text-dark:hover {
   margin-top: 460px;
 }
 
-.navigation-auto div{
+.navigation-auto div {
   border: 2px solid #ec7b10;
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
 }
 
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
   margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked ~ .navigation-auto .auto-btn1 {
   background: #ec7b10;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
+#radio2:checked ~ .navigation-auto .auto-btn2 {
   background: #ec7b10;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
+#radio3:checked ~ .navigation-auto .auto-btn3 {
   background: #ec7b10;
 }
 
-#radio4:checked ~ .navigation-auto .auto-btn4{
+#radio4:checked ~ .navigation-auto .auto-btn4 {
   background: #ec7b10;
 }
 

@@ -1,0 +1,69 @@
+.slide-banner-left {
+  margin-top: auto;
+  z-index: 100;
+  /* box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5); */
+  transform: translateX(-150%) scale(1.2);
+  transition: transform 0.7s ease;
+}
+
+.slide-banner-left.show {
+  transform: translateX(0);
+}
+
+.slide-banner-right {
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.banner1:hover .slide-banner-right {
+  transform: scale(1.05);
+}
+
+.slide-banner-right.show {
+  margin: auto;
+  cursor: pointer;
+  transform: translateX(0%);
+}
+
+.trapezium-right {
+  border-bottom: 45vw solid #f15413;
+  border-left: 8.5vw solid transparent;
+  height: 0;
+  width: 100%;
+}
+
+.trapezium-right-3 {
+  border-bottom: 45vw solid #57a70b;
+  border-left: 8.5vw solid transparent;
+  height: 0;
+  width: 100%;
+}
+
+.trapezium-left {
+  border-top: 45vw solid #ffa743;
+  border-right: 9.5vw solid transparent;
+  height: 0;
+  width: 100%;
+}
+
+.slogan {
+  position: absolute;
+  font-family: Century Gothic;
+  font-size: 7vw;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 40px;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 0.2s;
+}
+
+.banner1:hover .slogan {
+  text-decoration-color: #fff;
+}
+
+
+/* TEMP */
+
