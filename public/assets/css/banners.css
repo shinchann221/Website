@@ -20,6 +20,10 @@
   transform: scale(1.05);
 }
 
+.banner1:hover .slide-banner-right.second {
+  transform: scale(1.03);
+}
+
 .slide-banner-right.show {
   margin: auto;
   cursor: pointer;
@@ -52,8 +56,21 @@
   font-family: Century Gothic;
   font-size: 7vw;
   font-weight: bold;
-  text-align: right;
-  margin-right: 40px;
+  text-align: center;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 0.2s;
+}
+.slogan2 {
+  position: absolute;
+  margin-top: -95%;
+  margin-left: 10px;
+  font-family: Century Gothic;
+  font-size: 6.5vw;
+  font-weight: bold;
+  text-align: center;
   color: #fff;
   text-decoration: underline;
   text-decoration-color: transparent;
@@ -61,6 +78,10 @@
 }
 
 .banner1:hover .slogan {
+  text-decoration-color: #fff;
+}
+
+.banner1:hover .slogan2 {
   text-decoration-color: #fff;
 }
 
