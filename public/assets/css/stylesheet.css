@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap');
 
+
 .socials {
     margin-left: 50px;
     margin-bottom: 0;
@@ -112,7 +113,7 @@
     transition: 0.3s;
   }
   
-  .partners:hover {
+  .partner-grp:hover .partners{
     -webkit-filter: none;
   }
   
@@ -344,3 +345,4 @@
 .blockquote h4:first-letter {
  margin-left:-12px;
 }
+
