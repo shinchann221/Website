@@ -1,188 +1,320 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-174052277-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174052277-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-174052277-3');
-</script>
+      gtag("config", "UA-174052277-3");
+    </script>
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NQJ2TWR');</script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NQJ2TWR");
+    </script>
     <!-- End Google Tag Manager -->
-    
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>NT-KISAN - Farming Application</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/neemLogo.png">
-    <meta property="og:image" content="">
-    <meta name="twitter:title" content="">
-    <meta property="og:type" content="website">
-    <meta name="description" content="">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/neemLogo.png"
+    />
+    <meta property="og:image" content="" />
+    <meta name="twitter:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta name="description" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="" />
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/slicknav.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/animated-headline.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/animated-headline.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/banners.css" />
+    <link rel="stylesheet" href="assets/css/stylesheet.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQJ2TWR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NQJ2TWR"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- ? Preloader Start -->
     <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/neemLogo.png" alt="Neem Tree">
-                </div>
-            </div>
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="preloader-circle"></div>
+          <div class="preloader-img pere-text">
+            <img src="assets/img/neemLogo.png" alt="Neem Tree" />
+          </div>
         </div>
+      </div>
     </div>
     <!-- Preloader Start -->
     <header>
-       <!-- Header Start -->
-       <div class="header-area">
-        <div class="main-header ">
-            <div class="header-bottom">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <!-- Logo -->
-                        <div class="col-xl-3 col-lg-4">
-                            <div class="logo">
-                                <a href="index.html" style="display: inline-block;"><img src="assets/img/main.png" alt="logo" 
-                                        style="width: 220px;"></a>
-                            </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-8">
-                            <div class="menu-wrapper  d-flex align-items-center justify-content-end">
-                                <!-- Main-menu -->
-                                <div class="main-menu d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <!-- ABOUT US -->
-                                            <li><a href="#">About Us</a>
-                                                <ul class="submenu">
-                                                    <li><a href="aboutUs.html">Company</a></li>
-                                                    <li><a href="leadershipTeam.html">Leadership Team</a></li>
-                                                </ul>
-                                            </li>
-                                            <!-- OUR BUISNESSES -->
-                                            <li><a href="#">Our Businesses</a>
-                                                <ul class="submenu">
-                                                    <li><a href="nt-kisan.html">Service for Farmers</a></li>
-                                                    <li><a href="farmUncle.html">Supply Chain</a>
-                                                        <ul style="left: 100.5%; top: -60%;" class="submenu">
-                                                            <li><a href="farmUncle.html">Solution for Restraunt/Hotel</a></li> 
-                                                            <li><a href="CorporateOrders.html">Corporate Orders</a></li>   
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <!-- INNOVATION, RESEARCH AND DEVELOPMENT -->
-                                            <li><a href="#">R&D</a>
-                                                <ul class="submenu">
-                                                    <li><a href="ntaal.html">NT-AAL</a></li>
-                                                    <li><a href="ntaal.html#research">Research Papers – Reports</a></li>
-                                                    <li><a href="ntaal.html#openDataset">Open Data Sets</a></li>
-                                                </ul>
-                                            </li>
-                                            <!-- INVESTORS PANEL -->
-                                            <li><a href="investorPanel.html">Investor Panel</a>
-                                                <ul class="submenu">
-                                                    <li><a href="investorPanel.html#awards">Corporate Awards</a></li>
-                                                    <li><a href="investorPanel.html#ourPartners">Our Partners</a></li>
-                                                </ul>
-                                            </li>
-                                            <!-- MEDIA KIT -->
-                                            <li><a href="mediaKit.html">MediaKit</a>
-                                                <ul class="submenu">
-                                                    <li><a href="mediaKit.html#gallery">Gallery</a></li>
-                                                </ul>
-                                            </li>
-                                            <!-- CONTACT US -->
-                                            <li><a href="contactUs.html">Contact Us</a></li>
-                                            <!-- BLOGS -->
-                                            <li><a href=" https://neemtreespeaks.home.blog/" alt="Blog">Blogs</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
+      <!-- Header Start -->
+      <div class="header-area">
+        <div class="main-header">
+          <div class="header-bottom">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-xl-3 col-lg-4">
+                  <div class="logo">
+                    <a href="index.html" style="display: inline-block"
+                      ><img
+                        src="assets/img/main.png"
+                        alt="logo"
+                        style="width: 220px"
+                    /></a>
+                  </div>
                 </div>
+                <div class="col-xl-9 col-lg-8">
+                  <div
+                    class="
+                      menu-wrapper
+                      d-flex
+                      align-items-center
+                      justify-content-end
+                    "
+                  >
+                    <!-- Main-menu -->
+                    <div class="main-menu d-none d-lg-block">
+                      <nav>
+                        <ul id="navigation">
+                          <!-- ABOUT US -->
+                          <li>
+                            <a href="#">About Us</a>
+                            <ul class="submenu">
+                              <li><a href="aboutUs.html">Company</a></li>
+                              <li>
+                                <a href="leadershipTeam.html"
+                                  >Leadership Team</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <!-- OUR BUISNESSES -->
+                          <li>
+                            <a href="#">Our Businesses</a>
+                            <ul class="submenu">
+                              <li>
+                                <a href="nt-kisan.html">Service for Farmers</a>
+                              </li>
+                              <li>
+                                <a href="farmUncle.html">Supply Chain</a>
+                                <ul
+                                  style="left: 100.5%; top: -60%"
+                                  class="submenu"
+                                >
+                                  <li>
+                                    <a href="farmUncle.html"
+                                      >Solution for Restraunt/Hotel</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a href="CorporateOrders.html"
+                                      >Corporate Orders</a
+                                    >
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <!-- INNOVATION, RESEARCH AND DEVELOPMENT -->
+                          <li>
+                            <a href="#">R&D</a>
+                            <ul class="submenu">
+                              <li><a href="ntaal.html">NT-AAL</a></li>
+                              <li>
+                                <a href="ntaal.html#research"
+                                  >Research Papers – Reports</a
+                                >
+                              </li>
+                              <li>
+                                <a href="ntaal.html#openDataset"
+                                  >Open Data Sets</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <!-- INVESTORS PANEL -->
+                          <li>
+                            <a href="investorPanel.html">Investor Panel</a>
+                            <ul class="submenu">
+                              <li>
+                                <a href="investorPanel.html#awards"
+                                  >Corporate Awards</a
+                                >
+                              </li>
+                              <li>
+                                <a href="investorPanel.html#ourPartners"
+                                  >Our Partners</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <!-- MEDIA KIT -->
+                          <li>
+                            <a href="mediaKit.html">MediaKit</a>
+                            <ul class="submenu">
+                              <li>
+                                <a href="mediaKit.html#gallery">Gallery</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <!-- CONTACT US -->
+                          <li><a href="contactUs.html">Contact Us</a></li>
+                          <!-- BLOGS -->
+                          <li>
+                            <a
+                              href=" https://neemtreespeaks.home.blog/"
+                              alt="Blog"
+                              >Blogs</a
+                            >
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div class="col-12">
+                  <div class="mobile_menu d-block d-lg-none"></div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- Header End -->
+      </div>
+      <!-- Header End -->
     </header>
     <!-- header end -->
-    <br>
-    <br>
+    <br />
+    <br />
 
     <div class="container text-center">
-        <img src="assets/img/kisan/Logo.svg" class="card-img kisan-logo1" alt="..." style="width: 50px;margin-top:0px;">
-        <h2 style="font-size: 40px;"><span style="color:#ec7b10">NT KISAN</span> - Application for Farmers </h2>
+      <h1 class="kheti">खेती का नया तरीका</h1>
+      <!-- css in bootstrap.min-->
 
+      <br /><br />
+
+      <div>
+        <p class="hindi">
+          NT- KISAN एप्लिकेशन के निर्माण से हमारा उद्देश्य है कि हम प्रत्येक
+          किसान कि खेती का समावेशी विकास करने में सहायता करें। आज ही आपने फोन पे
+          डाउनलोड कीजिए NT KISAN और अपनाइए खेती का नया और बेहतर तरीका और आसान
+          बनाइए अपनी ज़िंदगी को।
+        </p>
+      </div>
+      <br /><br />
+
+      <!-- sreenshots -->
     </div>
-    <br>
+
+    <div class="container text-center">
+      <img
+        src="assets/img/kisan/Logo.svg"
+        class="card-img kisan-logo1"
+        alt="..."
+        style="width: 50px; margin-top: 0px"
+      />
+      <h2 style="font-size: 40px">
+        <span style="color: #ec7b10">NT KISAN</span>
+      </h2>
+    </div>
+    <br />
 
     <div class="container">
-        <div class="alert alert-warning text-center" role="alert">
-            The Application is releasing soon!
-        </div>
+      <div class="alert alert-warning text-center" role="alert">
+        The Application is releasing soon!
+      </div>
     </div>
 
     <div class="container">
-        <div class="card mb-3 border-0" style="max-width: 100%">
-            <div class="row no-gutters">
-                <div class="col-lg-7 pt-6 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <div class="card-body">
-
-                        <div class="col-lg-5 order-1 order-lg-2 hero-img">
-                            <img src="assets/img/kisan/NT-Kisan.svg" class="card-img kisan-mob" alt="..."
-                                style="width: 100%;">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 order-1 order-lg-2 hero-img">
-                    <img src="assets/img/kisan/Logo.svg" class="card-img kisan-logo" alt="..."
-                        style="width: 70%;margin-left:20px;margin-top:40px;">
-                </div>
-
-            </div>
+      <div class="card mb-3 border-0" style="max-width: 100%">
+        <div class="row no-gutters">
+          
+            <div class="card-body">
+              <div class="col-lg-5 order-1 order-lg-2 hero-img" style="margin: auto; width: 100%">
+                <img
+                  src="assets/img/kisan/Line.png"
+                  class="card-img kisan-mob"
+                  alt="..."
+                  style="margin: auto; width: 100%;"
+                />
+              </div>
+            
+          </div>
         </div>
+      </div>
     </div>
 
-    <br>
+    <br />
 
-    <div class="container-fluid" style="background-color: rgb(10, 73, 59);">
+    <!-- key features -->
+
+    <div class="container">
+      <input
+        type="text"
+        name="phone"
+        id="phone"
+        placeholder="Enter your number"
+      />
+      <button>Submit</button>
+    </div>
+
+    <div class="container text-left" id="hindi">
+      <h1 style="font-size: 40px; margin-top: 3%">How we help farmers</h1>
+
+      <hr style="color: #ec7b10" />
+      <p
+        class="card-text text-justify hindi"
+      >
+        जैसे एक पौधे को वृक्ष बनने के लिए पानी की अवक्षकता होती है उसी तरह देश
+        का किसान, भारत नाम के पेड़ को दिए पानी के समान है। यह अमृत उस पेड़ को
+        रोज सहारा देते हुए उसे संपूर्ण बनाता है । इसी तरह देश का हर एक किसान
+        हमेशा देश के विकास के लिए काम करते हुए अपनी फसल के द्वारा हर एक नागरिक
+        को तृप्त करता है। जब व्यवसाय से आधोनिकता जुड़ेगी तब केवल हमारा नही पर
+        किसानों का भी नाम रोशन होगा। यह Neem Tree Agro Solutions की एक कोशिश है
+        जो सभी किसानों के विकास से साथ ही सफल होगी।
+      </p>
+    </div>
+
+    <!-- <div class="container-fluid" style="background-color: rgb(10, 73, 59);">
         <div class="container">
             <br>
             <h1 style="font-size:40px;color:white;margin-top:20px;">FEATURES</h1>
@@ -231,43 +363,67 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
 
-    <div class="container text-left" id="hindi">
-        <h1 style="font-size: 40px; margin-top: 3%;">How we help farmers</h1>
 
-        <hr style="color:#ec7b10;">
-        <p class="card-text text-justify" style="font-size: 25px; font-weight: 500; line-height: 50px;margin-right:20px;margin-top:40px;color:black;">जैसे एक पौधे को वृक्ष बनने के लिए पानी की अवक्षकता होती है उसी तरह देश का किसान, भारत नाम के पेड़ को दिए पानी के समान है। यह अमृत उस पेड़ को रोज सहारा देते हुए उसे संपूर्ण बनाता है । इसी तरह देश का हर एक किसान हमेशा देश के विकास के लिए काम करते हुए अपनी फसल के द्वारा हर एक नागरिक को तृप्त  करता है। जब व्यवसाय से आधोनिकता जुड़ेगी तब केवल हमारा नही पर किसानों का भी नाम रोशन होगा। यह Neem Tree Agro Solutions की एक कोशिश है जो सभी किसानों के विकास से साथ ही सफल होगी।
-            
-        <br>            
-        NT- KISAN एप्लिकेशन के निर्माण से हमारा उद्देश्य है कि हम प्रत्येक किसान कि खेती का समावेशी विकास करने में सहायता करें। आज ही आपने फोन पे डाउनलोड कीजिए NT KISAN और अपनाइए खेती का नया और बेहतर तरीका और आसान बनाइए अपनी ज़िंदगी को।</p>
-    </div>
+        <div class="container" style="display: flex;align-items: center;
+        justify-content: center; margin-top: 100px;">
+            <div class="counter-container">
+                <i class="fab fa-twitter fa-3x" style="color: #000;"></i>
+                <div class="counter" data-target="12000"></div>
+                <span style="color: #000;">Twitter Followers</span>
+            </div>
+            <div class="counter-container">
+                <i class="fab fa-youtube fa-3x" style="color: #000;"></i>
+                <div class="counter" data-target="5000"></div>
+                <span style="color: #000;">YouTube Subscribers</span>
+            </div>
+            <div class="counter-container">
+                <i class="fab fa-facebook fa-3x" style="color: #000;"></i>
+                <div class="counter" data-target="7500"></div>
+                <span style="color: #000;">Facebook Fans</span>
+            </div>
+        </div>
+
+    
 
     <div class="container text-left" id="gallery">
-        <h1 style="font-size: 30px; margin-top: 5%;">Testimonials</h1>
+      <h1 style="font-size: 30px; margin-top: 5%">Testimonials</h1>
 
-        <hr style="color:#ec7b10;">
-        <!--image slider start-->
-    <div class="gallery-slider">
+      <hr style="color: #ec7b10" />
+      <!--image slider start-->
+      <div class="gallery-slider">
         <div class="gallery-slides">
           <!--radio buttons start-->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
           <!--radio buttons end-->
           <!--slide images start-->
           <div class="gallery-slide first">
-            <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" alt="">
+            <img
+              src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+              alt=""
+            />
           </div>
           <div class="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1522120679444-b967faef8c38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+            <img
+              src="https://images.unsplash.com/photo-1522120679444-b967faef8c38?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+              alt=""
+            />
           </div>
           <div class="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1472653525502-fc569e405a74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+            <img
+              src="https://images.unsplash.com/photo-1472653525502-fc569e405a74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+              alt=""
+            />
           </div>
           <div class="gallery-slide">
-            <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+            <img
+              src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+              alt=""
+            />
           </div>
           <!--slide images end-->
           <!--automatic navigation start-->
@@ -289,31 +445,44 @@
         <!--manual navigation end-->
       </div>
       <!--image slider end-->
-
     </div>
 
     <footer>
-        
-        <div class="container socials">
-            <a href="https://www.facebook.com/neemtreeagrosolutions"><img src="assets/img/Social Icons/Facebook.svg"
-                    alt="Facebook" class="img-fluid qwe"></a>
-            <a href="https://www.instagram.com/neemtreeagro/"><img src="assets/img/Social Icons/Instagram.svg"
-                    alt="Instagram" class="img-fluid qwe"></a>
-            <a href=" https://www.linkedin.com/company/neemtree-agro-solution/"><img
-                    src="assets/img/Social Icons/Linkedin.svg" alt="Linkedin" class="img-fluid qwe"></a>
-            <a href="https://twitter.com/NeemTreeAgro"><img src="assets/img/Social Icons/Twitter.svg" alt="Twitter"
-                    class="img-fluid qwe"></a>
-
-        </div>
-        
+      <div class="container socials">
+        <a href="https://www.facebook.com/neemtreeagrosolutions"
+          ><img
+            src="assets/img/Social Icons/Facebook.svg"
+            alt="Facebook"
+            class="img-fluid qwe"
+        /></a>
+        <a href="https://www.instagram.com/neemtreeagro/"
+          ><img
+            src="assets/img/Social Icons/Instagram.svg"
+            alt="Instagram"
+            class="img-fluid qwe"
+        /></a>
+        <a href=" https://www.linkedin.com/company/neemtree-agro-solution/"
+          ><img
+            src="assets/img/Social Icons/Linkedin.svg"
+            alt="Linkedin"
+            class="img-fluid qwe"
+        /></a>
+        <a href="https://twitter.com/NeemTreeAgro"
+          ><img
+            src="assets/img/Social Icons/Twitter.svg"
+            alt="Twitter"
+            class="img-fluid qwe"
+        /></a>
+      </div>
     </footer>
 
     <!-- Scroll Up -->
     <div id="back-top">
-        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+      <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
 
     <script src="./assets/js/gallery.js"></script>
+    <script src="./assets/js/counter.js"></script>
 
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->
@@ -355,7 +524,5 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
