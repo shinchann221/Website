@@ -89,8 +89,8 @@
 }
 
 /* TEMP */
-/*Homepage msg-banner*/
-#container-banner-msg {
+ /*Homepage msg-banner*/
+ #container-banner-msg {
   margin: 0px;
   text-align: center;
   font-weight: bolder;
@@ -109,56 +109,68 @@
   overflow: hidden;
 }
 
-#flip-word > div > div {
+#flip-word > div  {
   color: #fff;
-  padding: 4px 16px;
+  padding: 8px 20px;
+  padding-right: 20px;
   height: 50px;
   margin-bottom: 45px;
   display: inline-block;
 }
 
-#flip-word div:first-child {
-  animation: show-word 5s linear infinite;
-}
 
-#flip-word div div {
-  background: #42c58a;
-}
-#flip-word div:nth-child(1) div {
-  background: #87c830;
-}
-#flip-word div:nth-child(2) div {
-  background: #ffd400;
-}
-#flip-word div:nth-child(3) div {
-  background: #fe7e0f;
+#flip-word div::before {
+  content: "knowledge";
+  animation: show-word 10s linear infinite;
+  padding: 10px 10px;
 }
 
 @keyframes show-word {
-  0% {
-    margin-top: -270px;
+0%{
+  content: "knowledge";
+  background: #fe7e0f;
+}
+10%{
+  content: "knowledge";
+  background: #fe7e0f;
+}
+  20% {
+    content: "technology";
+    background: #74c707;
+}
+  35% {
+      content: "technology";
+      background: #74c707;
   }
-  5% {
-    margin-top: -180px;
+  45% {
+    content: "marketing";
+    background: #ffd400;
   }
-  33% {
-    margin-top: -180px;
+
+  55% {
+      content: "marketing";
+      background: #ffd400;
+    }
+  65% {
+      content: "extension services";
+      background: #fe7e0f;
   }
-  38% {
-    margin-top: -90px;
-  }
-  66% {
-    margin-top: -90px;
-  }
-  71% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
+  70% {
+    content: "extension services";
+    background: #fe7e0f;
+}
+85% {
+  content: "improved planning";
+  background: #74c707;
+}
+95% {
+  content: "improved planning";
+  background: #74c707;
+}
+100% {
+  content: "improved planning";
+  background: #92d638;
+}
 }
 /*Homepage msg-banner ends*/
 
