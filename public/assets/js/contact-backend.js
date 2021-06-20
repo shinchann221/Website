@@ -1,4 +1,4 @@
- var messagesRef = firebase.database().ref('messages');
+ var messagesRef = firebase.database().ref('Website-ContactUs');
 
   // Listen for form submit
   document.getElementById('contactForm').addEventListener('submit', submitForm);
@@ -28,12 +28,6 @@
       document.getElementById('phnumber').value = "";
       document.getElementById('message').value = "";
   }
-
-
-  // Function to get get form values
-  function getInputVal(id){
-    return document.getElementById(id).value;
-  }
   
   // Save message to firebase
   function saveMessage(name, subject, email, phone, message){
@@ -46,3 +40,8 @@
       message:message
     });
   }
+
+    // Function to get get form values
+    function getInputVal(id){
+      return document.getElementById(id).value;
+    }
