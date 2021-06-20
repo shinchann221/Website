@@ -60,6 +60,7 @@
     <link rel="stylesheet" href="assets/css/banners.css" />
     <link rel="stylesheet" href="assets/css/stylesheet.css" />
     <link rel="stylesheet" href="assets/css/certificatestyle.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
   </head>
 
   <body>
@@ -88,156 +89,124 @@
     <header>
       <!-- Header Start -->
       <div class="header-area">
-        <div class="main-header">
-          <div class="header-bottom">
-            <div class="container-fluid">
-              <div class="row align-items-center">
-                <!-- Logo -->
-                <div class="col-xl-3 col-lg-4">
-                  <div class="logo">
-                    <a href="index.html" style="display: inline-block"
-                      ><img
-                        src="assets/img/main.png"
-                        alt="logo"
-                        style="width: 220px"
-                    /></a>
+          <div class="main-header ">
+              <div class="header-bottom">
+                  <div class="container-fluid">
+                      <div class="row align-items-center">
+                          <!-- Logo -->
+                          <div class="col-xl-3 col-lg-4">
+                              <div class="logo">
+                                  <a href="index.html" style="display: inline-block;"><img src="assets/img/main.png" alt="logo" 
+                                          style="width: 220px;"></a>
+                              </div>
+                          </div>
+                          <div class="col-xl-9 col-lg-8">
+                              <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                  <!-- Main-menu -->
+                                  <div class="main-menu d-none d-lg-block">
+                                      <nav>
+                                          <ul id="navigation">
+                                              <!-- ABOUT US -->
+                                              <li><a href="#">About Us</a>
+                                                  <ul class="submenu">
+                                                      <li><a href="aboutUs.html">Company</a></li>
+                                                      <li><a href="leadershipTeam.html">Leadership Team</a></li>
+                                                  </ul>
+                                              </li>
+                                              <!-- OUR BUISNESSES -->
+                                              <li><a href="#" style="border: 3px solid #dad8d8;padding:15px">Our Businesses</a>
+                                                  <ul class="submenu">
+                                                      <li><a href="nt-kisan.html">Service for Farmers</a></li>
+                                                      <li><a href="farmUncle.html">Supply Chain</a>
+                                                          <ul style="left: 100.5%; top: -60%;" class="submenu">
+                                                              <li><a href="farmUncle.html">Solution for Restraunt/Hotel</a></li> 
+                                                              <li><a href="CorporateOrders.html">Corporate Orders</a></li>   
+                                                          </ul>
+                                                      </li>
+                                                  </ul>
+                                              </li>
+                                              <!-- INNOVATION, RESEARCH AND DEVELOPMENT -->
+                                              <li><a href="#">R&D</a>
+                                                  <ul class="submenu">
+                                                      <li><a href="ntaal.html">NT-AAL</a></li>
+                                                      <li><a href="ntaal.html#research">Research Papers – Reports</a></li>
+                                                      <li><a href="ntaal.html#openDataset">Open Data Sets</a></li>
+                                                  </ul>
+                                              </li>
+                                              <!-- INVESTORS PANEL -->
+                                              <li><a href="investorPanel.html">Investor Panel</a>
+                                                  <ul class="submenu">
+                                                      <li><a href="investorPanel.html#awards">Corporate Awards</a></li>
+                                                      <li><a href="investorPanel.html#ourPartners">Our Partners</a></li>
+                                                  </ul>
+                                              </li>
+                                              <!-- MEDIA KIT -->
+                                              <li><a href="mediaKit.html">Media kit</a>
+                                                  <!-- <ul class="submenu">
+                                                      <li><a href="mediaKit.html#gallery">Gallery</a></li>
+                                                  </ul> -->
+                                              </li>
+                                              <!-- CONTACT US -->
+                                              <li><a href="contactUs.html">Contact Us</a></li>
+                                              <!-- BLOGS -->
+                                              <li><a href=" https://neemtreespeaks.home.blog/" alt="Blog">Blogs</a>
+                                              </li>
+                                          </ul>
+                                      </nav>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- Mobile Menu -->
+                          <div class="col-12">
+                              <div class="mobile_menu d-block d-lg-none"></div>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <div class="col-xl-9 col-lg-8">
-                  <div
-                    class="
-                      menu-wrapper
-                      d-flex
-                      align-items-center
-                      justify-content-end
-                    "
-                  >
-                    <!-- Main-menu -->
-                    <div class="main-menu d-none d-lg-block">
-                      <nav>
-                        <ul id="navigation">
-                          <!-- ABOUT US -->
-                          <li>
-                            <a href="#">About Us</a>
-                            <ul class="submenu">
-                              <li><a href="aboutUs.html">Company</a></li>
-                              <li>
-                                <a href="leadershipTeam.html"
-                                  >Leadership Team</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <!-- OUR BUISNESSES -->
-                          <li>
-                            <a href="#" style="border: 3px solid #dad8d8;padding:15px">Our Businesses</a>
-                            <ul class="submenu">
-                              <li>
-                                <a href="nt-kisan.html">Service for Farmers</a>
-                              </li>
-                              <li>
-                                <a href="farmUncle.html">Supply Chain</a>
-                                <ul
-                                  style="left: 100.5%; top: -60%"
-                                  class="submenu"
-                                >
-                                  <li>
-                                    <a href="farmUncle.html"
-                                      >Solution for Restraunt/Hotel</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a href="CorporateOrders.html"
-                                      >Corporate Orders</a
-                                    >
-                                  </li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </li>
-                          <!-- INNOVATION, RESEARCH AND DEVELOPMENT -->
-                          <li>
-                            <a href="#">R&D</a>
-                            <ul class="submenu">
-                              <li><a href="ntaal.html">NT-AAL</a></li>
-                              <li>
-                                <a href="ntaal.html#research"
-                                  >Research Papers – Reports</a
-                                >
-                              </li>
-                              <li>
-                                <a href="ntaal.html#openDataset"
-                                  >Open Data Sets</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <!-- INVESTORS PANEL -->
-                          <li>
-                            <a href="investorPanel.html">Investor Panel</a>
-                            <ul class="submenu">
-                              <li>
-                                <a href="investorPanel.html#awards"
-                                  >Corporate Awards</a
-                                >
-                              </li>
-                              <li>
-                                <a href="investorPanel.html#ourPartners"
-                                  >Our Partners</a
-                                >
-                              </li>
-                            </ul>
-                          </li>
-                          <!-- MEDIA KIT -->
-                          <li>
-                            <a href="mediaKit.html">Media kit</a>
-                            <!-- <ul class="submenu">
-                              <li>
-                                <a href="mediaKit.html#gallery">Gallery</a>
-                              </li>
-                            </ul> -->
-                          </li>
-                          <!-- CONTACT US -->
-                          <li><a href="contactUs.html">Contact Us</a></li>
-                          <!-- BLOGS -->
-                          <li>
-                            <a
-                              href=" https://neemtreespeaks.home.blog/"
-                              alt="Blog"
-                              >Blogs</a
-                            >
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
-                <!-- Mobile Menu -->
-                <div class="col-12">
-                  <div class="mobile_menu d-block d-lg-none"></div>
-                </div>
               </div>
-            </div>
           </div>
-        </div>
       </div>
       <!-- Header End -->
-    </header>
+  </header>
     <!-- header end -->
     <br />
     <br />
 
     <div class="container text-center">
-      <h1 class="kheti">खेती का नया तरीका</h1>
+       
+          <div style="margin: auto; display: flex; align-items: center; justify-content: center;">
+            <h1 style="color: #000;">Hindi</h1>
+            <div class="toggle-container">
+              <input type="checkbox" id="good" class="toggle">
+              <label for="good" class="label">
+                <div class="ball"></div>
+              </label>
+            </div>
+            <h1 style="color: #000;">English</h1>
+          </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="container text-center">
+      <h1 class="kheti" id="hindi-text">खेती का नया तरीका</h1>
+      <h1 class="kheti hide" id="english-text">Kheti ka naya tareeka</h1>
       <!-- css in bootstrap.min-->
 
       <br /><br />
 
+        
+
       <div>
-        <p class="hindi">
+        <p class="hindi hindi-text">
           NT- KISAN एप्लिकेशन के निर्माण से हमारा उद्देश्य है कि हम प्रत्येक किसान कि खेती का समावेशी विकास करने में सहायता करें।  <br>
-          <span style="font-size: 45px; font-weight: bolder;">आज ही <span style="color: #ec7b10;">मुफ्त</span> में  आपने फोन पर डाउनलोड कीजिए  NT KISAN का फ्री एप।</span> <br> 
+          <span class="download">आज ही <span style="color: #ec7b10;">मुफ्त</span> में  आपने फोन पर डाउनलोड कीजिए  NT KISAN का फ्री एप।</span> <br> 
           और अपनाइए खेती का नया और बेहतर तरीका और आसान बनाइए अपनी ज़िंदगी को।
+        </p>
+        <p class="hide english-text english">
+          The purpose behind the launch of NT-KISAN application is to ensure that it becomes the catalyst for the growth and well-being of every farmer in the country. <br>
+          <span class="download">Download the NT-KISAN app for <span style="color: #ec7b10;">free </span>on your phones today!!!</span> <br> 
+          Switch to a new and better method of farming and make your life easier. 
         </p>
       </div>
       <br /><br />
@@ -246,12 +215,7 @@
     </div>
 
     <div class="container text-center">
-      <img
-        src="assets/img/kisan/Logo.svg"
-        class="card-img kisan-logo1"
-        alt="..."
-        style="width: 50px; margin-top: 0px"
-      />
+      
       <h2 style="font-size: 40px">
         <span style="color: #ec7b10">NT KISAN</span>
       </h2>
@@ -287,104 +251,58 @@
 
     <!-- key features -->
     <div class="container">
-      <p style="color:#ec7b10; font-size:4.5rem">विशेषताएं<br></p>
-   <p class="card-text text-justify hindi"> 
+      <p class="hindi-text" style="color:#ec7b10; font-size:4.5rem">विशेषताएं<br></p>
+      <p class="english-text hide" style="color:#ec7b10; font-size:4.5rem">Features:<br></p>
+   <p class="card-text text-justify hindi hindi-text"> 
    
     1. अपने खेत को विनाशकारी कीट से मुक्त कराएं <br>
     2. अपनी फसल की पैदावार बढ़ाए<br>
     3. उगाईं फसल पर अपने कृषि का उचित लाभ पाइए<br>
     4. अपनी उपज की गुणवत्ता बढ़ाए<br>
- <span  class="card-text text-justify hindi" style="color: #ec7b10;"><br> कैसे?<br></span> डाउनलोड कीजिए फ्री NT-KISAN एप ओर जानिए।
+    <span  class="card-text text-justify hindi" style="color: #ec7b10;"><br> कैसे?<br></span> डाउनलोड कीजिए फ्री NT-KISAN एप ओर जानिए।
+  </p>
+
+  <p class="card-text text-justify english english-text hide"> 
+   
+    1. Free your crops from PEST <br>
+    2. Increase in the quantity of your produce <br>
+    3. Avail fair prices for your harvest and take maximum advantage of it <br>
+    4. Increase in the quality of the harvested crops <br>
+ <span  class="card-text text-justify hindi" style="color: #ec7b10;"><br> How?<br></span> Download the NT-KISAN app for free and find out. 
   </p>
       </div>
     <div class="container" style=" background-image: linear-gradient(rgba(187, 230, 0, 0.5), rgba(255, 221, 28, 0.733))">
       <i class="fa fa-phone" style="font-size:48px;color:rgb(255, 158, 13) "></i>
-      <input type="tel" id="id" placeholder="अपना फोन नंबर डालें " style="border: 1px solid #000; color: #000;" >
+      <input type="tel" id="id" class="hindi-text" placeholder="अपना फोन नंबर डालें " style="border: 1px solid #000; color: #000;" >
+
+      <input type="tel" id="id" class="english-text hide" placeholder="Enter you phone number " style="border: 1px solid #000; color: #000;" >
  
       <button style="border: 1px solid #000; padding: 15px; margin-left: 15px;" class="cert_btn" id="btn" onclick="return confirm('Number Submited')" >Submit</button>
     </div>
 
     <div class="container text-left" id="hindi">
       
-      <p
-      class="card-text text-justify hindi"
-    >
-    जैसे एक पौधे को वृक्ष बनने के लिए पानी की आवश्यकता होती है उसी तरह देश का किसान, भारत नाम के पेड़ को दिए पानी के समान है। यह अमृत उस पेड़ को रोज सहारा देते हुए उसे संपूर्ण बनाता है । इसी तरह देश का हर एक किसान हमेशा देश के विकास के लिए काम करते हुए अपनी फसल के द्वारा हर एक नागरिक को तृप्त करता है। 
-    </p>
     <p
-    class="card-text text-justify hindi"
-  >जब व्यवसाय से आधुनिकता जुड़ेगी तब केवल हमारा ही नही पर किसानों का भी नाम रोशन होगा। यह Neem Tree Agro Solutions की एक कोशिश है जो सभी किसानों के विकास से साथ ही सफल होगी।</p>
+      class="card-text text-justify hindi hindi-text"
+      >
+      जैसे एक पौधे को वृक्ष बनने के लिए पानी की आवश्यकता होती है उसी तरह देश का किसान, भारत नाम के पेड़ को दिए पानी के समान है। यह अमृत उस पेड़ को रोज सहारा देते हुए उसे संपूर्ण बनाता है । इसी तरह देश का हर एक किसान हमेशा देश के विकास के लिए काम करते हुए अपनी फसल के द्वारा हर एक नागरिक को तृप्त करता है। 
+    </p>
+
+    <p
+      class="card-text text-justify english english-text hide"
+      >
+      Water is an essential element for a sapling to become a tree. Similarly for the growth and development of India, a farmer plays a crucial role. A farmer works tirelessly for the betterment of the country and through his harvest, fills the stomach of every Citizen. 
+    </p>
+
+    <p
+    class="card-text text-justify hindi hindi-text"
+    >जब व्यवसाय से आधुनिकता जुड़ेगी तब केवल हमारा ही नही पर किसानों का भी नाम रोशन होगा। यह Neem Tree Agro Solutions की एक कोशिश है जो सभी किसानों के विकास से साथ ही सफल होगी।</p>
+
+    <p
+    class="card-text text-justify english english-text hide"
+    >When Technology adds to Agriculture, It not only leads to prosperity of the citizens but also the farmers. Betterment of the country and it's farmers is our goal at Neem Tree Agro Solutions which will attain its objective with the collective efforts of each and every farmer.</p>
+
   </div>
-
-    <!-- <div class="container-fluid" style="background-color: rgb(10, 73, 59);">
-        <div class="container">
-            <br>
-            <h1 style="font-size:40px;color:white;margin-top:20px;">FEATURES</h1>
-            <br>
-            <div class="card-group ">
-                <div class="card bg-transparent border-0 text-center mx-auto d-block">
-                    <img src="assets/img/kisan/Nutrient Calculator.svg" class="card-img-top" alt="..."
-                        style="width:80px;height:80px;">
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-size: 20px;color:white;">Nutrient Calculator</h5>
-                    </div>
-                </div>
-                <div class="card bg-transparent border-0 text-center mx-auto d-block">
-                    <img src="assets/img/kisan/Digital Crop Diary.svg" class="card-img-top" alt="..."
-                        style="width:80px;height:80px;">
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-size: 20px;color:white;">Digital Crop Diary</h5>
-                    </div>
-                </div>
-                <div class="card bg-transparent border-0 text-center mx-auto d-block">
-                    <img src="assets/img/kisan/Pest Analysis.svg" class="card-img-top" alt="..."
-                        style="width:80px;height:80px;">
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-size: 20px;color:white;">Pest Analysis</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="container"> 
-            <div class="card-group ">
-                <div class="card bg-transparent border-0 text-center mx-auto d-block">
-                    <img src="assets/img/kisan/Crop Information.svg" class="card-img-top" alt="..."
-                        style="width:80px;height:80px;">
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-size: 20px;color:white;">Crop Information</h5>
-                    </div>
-                </div>
-                <div class="card bg-transparent border-0 text-center mx-auto d-block">
-                    <img src="assets/img/kisan/Weather.svg" class="card-img-top" alt="..."
-                        style="width:80px;height:80px;">
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-size: 20px;color:white;">Weather Forecast</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>-->
-
-        <!-- <div class="container" style="display: flex;align-items: center;
-        justify-content: center; margin-top: 100px;">
-            <div class="counter-container">
-                <i class="fab fa-twitter fa-3x" style="color: #000;"></i>
-                <div class="counter" data-target="12000"></div>
-                <span style="color: #000;">Twitter Followers</span>
-            </div>
-            <div class="counter-container">
-                <i class="fab fa-youtube fa-3x" style="color: #000;"></i>
-                <div class="counter" data-target="5000"></div>
-                <span style="color: #000;">YouTube Subscribers</span>
-            </div>
-            <div class="counter-container">
-                <i class="fab fa-facebook fa-3x" style="color: #000;"></i>
-                <div class="counter" data-target="7500"></div>
-                <span style="color: #000;">Facebook Fans</span>
-            </div>
-        </div> -->
 
     <div class="container text-left" id="gallery">
       <h1 style="font-size: 30px; margin-top: 5%">Testimonials</h1>
@@ -399,7 +317,7 @@
           <!--slide images start-->
           <div class="gallery-slide first">
             <img
-              src="./assets/img/Testimonials/5.png"
+              src="./assets/img/Testimonials/nt-kisan/5.png"
               alt=""
             />
           </div>
@@ -433,9 +351,6 @@
                                               <h3>Copyright © Neem Tree Agro Solutions 2020</h3>
                                           </a>
                                           <br>
-                                          <a href="contactUs.html">
-                                              <h3>Contact Us</h3>
-                                          </a>
                                       </div>
                                   </div>
                               </div>
@@ -522,6 +437,7 @@
 
     <script src="./assets/js/gallery.js"></script>
     <script src="./assets/js/counter.js"></script>
+    <script src="./assets/js/script.js"></script>
 
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->

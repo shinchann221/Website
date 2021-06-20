@@ -4128,6 +4128,7 @@ input[type="submit"].btn-block {
 }
 .card-img {
   width: 100%;
+  margin-bottom: 60px;
   border-radius: calc(0.25rem - 1px);
 }
 .card-img-top {

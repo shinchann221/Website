@@ -37,3 +37,35 @@ function writeText() {
 //         data.classList.remove('hide');
 //     })
 // })
+
+const toggle = document.querySelector('.toggle');
+
+const hindi = document.getElementById('hindi-text')
+const english = document.getElementById('english-text')
+
+const hindiAll = document.querySelectorAll('.hindi-text');
+const englishAll = document.querySelectorAll('.english-text');
+
+toggle.addEventListener('change', (e) => changeLanguage(e.target));
+
+function changeLanguage() {
+   if(english.classList.contains('hide')) {
+      hindi.classList.add('hide');
+      english.classList.remove('hide');
+      hindiAll.forEach(hindiText => {
+         hindiText.classList.add('hide');
+      })
+      englishAll.forEach(englishText => {
+         englishText.classList.remove('hide');
+      })
+   } else {
+      hindi.classList.remove('hide');
+      english.classList.add('hide');
+      hindiAll.forEach(hindiText => {
+         hindiText.classList.remove('hide');
+      })
+      englishAll.forEach(englishText => {
+         englishText.classList.add('hide');
+      })
+   }
+}

@@ -26,6 +26,15 @@
   border: 2px solid #000;
 }
 
+.team-title {
+  font-size: 22px;
+}
+
+.team-post {
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .team-img {
   width: 400px;
   height: 400px;
@@ -39,11 +48,12 @@
 
 .mediaBtn {
   text-decoration: none;
-  padding: 13px 15px;
+  padding: 13px;
+  height: 100%;
   border-radius: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  margin-left: 20px;
+  margin: 15px;
 }
 
 .mediaBtn.facebook {
@@ -88,7 +98,7 @@
 
 .slider {
   width: 300px;
-  height: 500px;
+  height: 50px;
   overflow: hidden;
 }
 
@@ -117,6 +127,14 @@
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   transition: 0.3s;
+}
+
+.partners.one {
+  height: 150px;
+}
+
+.partners.two {
+  height: 70px;
 }
 
 .partner-grp:hover .partners {
@@ -156,6 +174,10 @@
 
 .kisan-mob {
   margin: auto;
+}
+
+.farmImgs2 {
+  visibility: hidden;
 }
 
 /* GALLERY SLIDER */
@@ -542,4 +564,184 @@ section {
   .footer-distributed .footer-center i {
     margin-left: 0;
   }
+}
+
+.phone {
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 15px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.phone_btn {
+  margin: 15px 0 15px;
+  background: #fff;
+  display: inline-block;
+  padding: 18px 44px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #09cc7f;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #034347;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.phone_btn:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.phone_btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.phone_btn:focus {
+  outline: none;
+}
+
+#status {
+  width: 400px;
+  color: #000;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: auto 15px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.kheti {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 60px;
+}
+
+.hindi {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 35px;
+  line-height: 60px;
+  margin-right: 20px;
+  margin-top: 40px;
+  color: black;
+}
+
+.download {
+  font-size: 45px; 
+  font-weight: bolder;
+}
+
+.english {
+  font-size: 30px;
+  line-height: 60px;
+  margin-right: 20px;
+  margin-top: 40px;
+  color: black;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+  color: #000;
+}
+
+.counter-container span {
+  font-size: 20px;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+/* HINDI ENGLISH TOGGLE */
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  width: 140px;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+.label {
+  position: relative;
+  background-color: #ffa743;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 15px 0;
+}
+
+.toggle:checked + .label {
+  background-color: #57a70b;
+}
+
+.ball {
+  background-color: #fff;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  align-items: center;
+  justify-content: center;
+  animation: slideOff 0.3s linear forwards;
+}
+
+.toggle:checked + .label .ball {
+  animation: slideOn 0.3s linear forwards;
+}
+
+@keyframes slideOn {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+
+  50% {
+    transform: translateX(20px) scale(1.2);
+  }
+
+  100% {
+    transform: translateX(40px) scale(1);
+  }
+}
+
+@keyframes slideOff {
+  0% {
+    transform: translateX(40px) scale(1);
+  }
+
+  50% {
+    transform: translateX(20px) scale(1.2);
+  }
+
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+.hide {
+  display: none;
 }

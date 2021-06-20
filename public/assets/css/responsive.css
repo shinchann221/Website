@@ -28,5 +28,221 @@
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
- 
+
+/* LEADERSHIP TEAMS */
+
+.team {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    height: 340px;
+    width: 95%;
+    border: 2px solid #000;
+  }
+
+  .team-title {
+    font-size: 14px;
+    margin-left: -40px;
+  }
+
+  .team-post {
+    font-weight: bold; 
+    font-size: 12px;
+    margin-left: -40px;
+  }
+  
+  p.team-about {
+   margin-top: 55px;
+   margin-left: -140px;
+   font-size: 13px;
+   line-height: 16px;
+  }
+  
+  .team-img {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to bottom right, #fff 10%, transparent 90%);
+  }
+
+  .team-linkdin {
+      font-size: 13px;
+  }
+  
+  .team-body {
+    padding-left: 50px;
+    padding-top: 0px;
+  }
+
+  /* ABOUT US */
+
+  .card-img {
+    width: 80%;
+    margin-left: auto;
+  }
+
+  /* NT KISAN */
+
+  .kheti {
+    font-size: 50px;
+  }
+
+  .hindi {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    margin-right: 20px;
+    margin-top: 40px;
+    color: black;
+  }
+
+  .english {
+    font-size: 25px;
+    line-height: 40px;
+    margin-right: 20px;
+    margin-top: 40px;
+    color: black;
+  }
+
+  .download {
+    font-size: 35px;
+  }
+
+  /* TESTIMONIAL */
+  .gallery-slider {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    /* border: 3px solid #ec7b10; */
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .gallery-slides {
+    width: 500%;
+    height: 400px;
+    display: flex;
+  }
+  
+  .gallery-slides input {
+    display: none;
+  }
+  
+  .gallery-slide {
+    width: 20%;
+    transition: 2s;
+    /* border: 3px solid #ec7b10; */
+  }
+  
+  .gallery-slide img {
+    width: 400px;
+    height: 400px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual {
+    position: absolute;
+    width: 400px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn {
+    border: 2px solid #ec7b10;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover {
+    background: #ec7b10;
+  }
+  
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first {
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first {
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first {
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    margin-top: 405px;
+  }
+  
+  .navigation-auto div {
+    border: 2px solid #ec7b10;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #ec7b10;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #ec7b10;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #ec7b10;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: #ec7b10;
+  }
+
+  /* INVESTORS PANEL */
+
+  .awards {
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 40px;
+    color: #000;
+    list-style-type: circle;
+  }
+
+  .partners.one {
+    height: 130px;
+  }
+
+  .partners.two {
+    height: 50px;
+  }
+
+  /* FARM UNCLE */
+
+  .farmImgs1 {
+    display: none;
+  }
+
+  .farmImgs2 {
+    visibility: visible;
+  }
 }
