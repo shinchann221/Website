@@ -203,7 +203,7 @@
 
 .gallery-slide {
   width: 20%;
-  transition: 2s;
+  transition: 5s;
   /* border: 3px solid #ec7b10; */
 }
 
@@ -740,6 +740,26 @@ section {
   100% {
     transform: translateX(0) scale(1);
   }
+}
+
+.logos {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ffb01e;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 9px #999;
+  transition: 0s;
+}
+
+.logos:active {
+  box-shadow: none;
+  transform: translateY(2px);
 }
 
 .hide {

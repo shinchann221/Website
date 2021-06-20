@@ -26,8 +26,8 @@
 }
  
 /* Large Mobile :480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
+@media only screen and (min-width: 380px) and (max-width: 767px) {
+.container {width:90vw}
 
 /* LEADERSHIP TEAMS */
 
@@ -36,7 +36,7 @@
     padding: 20px;
     margin-bottom: 20px;
     margin-left: 15px;
-    height: 340px;
+    height: 100%;
     width: 95%;
     border: 2px solid #000;
   }
@@ -110,8 +110,8 @@
 
   /* TESTIMONIAL */
   .gallery-slider {
-    width: 400px;
-    height: 400px;
+    width: 90vw;
+    height: 90vw;
     border-radius: 10px;
     /* border: 3px solid #ec7b10; */
     overflow: hidden;
@@ -120,7 +120,7 @@
   
   .gallery-slides {
     width: 500%;
-    height: 400px;
+    height: 90vw;
     display: flex;
   }
   
@@ -135,15 +135,15 @@
   }
   
   .gallery-slide img {
-    width: 400px;
-    height: 400px;
+    width: 90vw;
+    height: 90vw;
   }
   
   /*css for manual slide navigation*/
   
   .navigation-manual {
     position: absolute;
-    width: 400px;
+    width: 90vw;
     margin-top: 5px;
     display: flex;
     justify-content: center;
@@ -186,9 +186,9 @@
   .navigation-auto {
     position: absolute;
     display: flex;
-    width: 400px;
+    width: 90vw;
     justify-content: center;
-    margin-top: 405px;
+    margin-top: 91vw;
   }
   
   .navigation-auto div {
@@ -229,11 +229,11 @@
   }
 
   .partners.one {
-    height: 130px;
+    height: 25vw;
   }
 
   .partners.two {
-    height: 50px;
+    height: 9vw;
   }
 
   /* FARM UNCLE */
