@@ -1,20 +1,84 @@
 /* Normal desktop :1200px. */
-@media (min-width: 1200px) and (max-width: 1500px) {
-
-
+@media (min-width: 1200px) {
+  .kheti .text-center {
+    width:55vh;
+    }
+      .kheti .text-center >h4{
+        margin:0.4rem -0.1rem;
+        }
+        .kheti .text-center >img{
+         height:6rem
+          }
 }
-
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
+  .kheti .text-center {
+    width:54vh;
+    }
+      .kheti .text-center >h4{
+        margin:0.5rem -0.2rem;
+        }
+      /* LEADERSHIP TEAMS */
 
+.team {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  height: 100%;
+  width: 95%;
+  border: 2px solid #000;
+}
+
+.team-title {
+  font-size: 14px;
+  margin-left: -40px;
+}
+
+.team-post {
+  font-weight: bold; 
+  font-size: 12px;
+  margin-left: -40px;
+}
+
+p.team-about {
+ margin-top: 55px;
+ margin-left: -140px;
+ font-size: 13px;
+ line-height: 16px;
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  background-image: linear-gradient(to bottom right, #fff 10%, transparent 90%);
+}
+
+.team-linkdin {
+    font-size: 13px;
+}
+
+.team-body {
+  padding-left: 50px;
+  padding-top: 0px;
+}
 
 }
 
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
+  .kheti {
+    margin-left: 14vw;
+  
+  }
+  .kheti .text-center {
+    width:55vh !important;
+    }
+  .kheti .text-center >h4{
+  margin:0.1rem -0.2rem;
+  }
 
 }
 
@@ -22,13 +86,29 @@
 /* small mobile :320px. */
 @media (max-width: 767px) {
 .container {width:90vw}
- 
+.kheti {
+  margin-left: 14vw;
+}
+.kheti .text-center {
+  width:40vh !important;
+  }
+.kheti .text-center >h4{
+margin:1.3rem -0.1rem;
+}
 }
  
 /* Large Mobile :480px. */
-@media only screen and (min-width: 380px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 .container {width:90vw}
-
+.kheti {
+  margin-left:  13vw;
+}
+.kheti .text-center {
+  width:49vh !important;
+  }
+  .kheti .text-center >img{
+    margin:0.5rem 0.5rem;
+    }
 /* LEADERSHIP TEAMS */
 
 .team {
@@ -84,7 +164,7 @@
   /* NT KISAN */
 
   .kheti {
-    font-size: 50px;
+    font-size: 5rem;
   }
 
   .hindi {
