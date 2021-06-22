@@ -1,68 +1,25 @@
-'use strict';
-const functions = require('firebase-functions');
-const admin = require('firebase-admin');
-const nodemailer = require('nodemailer');
-const SMTPTransport = require('nodemailer/lib/smtp-transport');
-
-const gmailEmail = functions.config().gmail.login; //add gmail id to config
-const gmailPassword = functions.config().gmail.pass;    //add gmail password to config
+"use strict";
+const functions = require("firebase-functions");
+const admin = require("firebase-admin");
+const goMail = require("./mail");
 
 admin.initializeApp();
 
 //.onDataAdded is watched for changes in database
-exports.ContactFormBackend = functions.region('asia-south1').database.ref('/messages/{pushID}').onCreate((snaphot, context) =>{
+exports.ContactFormBackend = functions.region("asia-south1").database.ref("/Website-ContactUs/{pushID}").onCreate((snaphot) => {
 
-    //here we catch a new data, added to firebase database, it stored in a snap variable
-    const createdData = snaphot.val();
-
-    //here we send new data using function for sending emails
-    console.log(createdData);
-    goMail(createdData);
+  //here we send new data using function for sending emails
+  goMail(snaphot.val(),"Website Query || Contact Us");
 });
 
-var goMail = function (message) {
+exports.CorporateOrderBackend = functions.region("asia-south1").database.ref("/Website-Corporate-Order/{pushID}").onCreate((snaphot) => {
 
-    var email = message.email;
-    var name = message.name;
-    var phnum = message.phone;
-    var subject = message.subject;
-    var text = message.message;
+  //here we send new data using function for sending emails
+  goMail(snaphot.val(),"Website Query || Corporate Order");
+});
 
-    var outputtext = "Hey you got a query. Details are provided below \n\n\n" + name + "\n" + email + "\n" + phnum + "\n" + subject + "\n" + text;
+exports.ntkisanBackend = functions.region("asia-south1").database.ref("/Website-NT-Kisan/{pushID}").onCreate((snaphot) => {
 
-    //transporter is a way to send your emails
-    const transporter = nodemailer.createTransport({
-		host: "smtp.gmail.com",
-		port: 465,
-		secure: true,
-		auth: {
-			user: gmailEmail, // this should be YOUR GMAIL account
-			pass: gmailPassword // this should be your password
-		}
-	});
-    
-        // setup email data with unicode symbols
-        //this is how your email are going to look like
-        const mailOptions = {
-            to: 'neemtreeagrosolutions@gmail.com',
-            from: gmailEmail,
-            subject: 'Message From Website',
-            text: outputtext,
-          };
-          
-        // eslint-disable-next-line consistent-return
-        //call of this function send an email, and return status
-        transporter.sendMail(mailOptions,(err, info) => {
-            if(err) {
-                console.log(err);
-                response.json({ message: "message not sent: an error occured; check the server's console log" });
-            }
-            else {
-                // response.json({ message: `message sent: ${info.messageId}` });
-                response.json({ message: `Thank You For Reaching Us We'll Contact You Soon` });
-            }
-        });
-
-    };
-
-
+  //here we send new data using function for sending emails
+  goMail(snaphot.val(),"Website Query || NT-Kisan");
+});

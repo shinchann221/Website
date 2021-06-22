@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.certificate-container {
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+.certificate {
+  position: relative;
+  background-image: linear-gradient(rgba(3, 67, 71, 0.9) , rgba(3, 67, 71, 0.6));
+  color: #fff;
+  border-radius: 10px;
+  width: 50%;
+  align-items: center;
+  margin: -130px auto 0;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.certificate h2 {
+  font-weight: bolder;
+}
+
+.certificate .head_id {
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+
+.labels {
+  width: 50%;
+  text-align: right;
+}
+
+.info {
+  width: 50%;
+  text-align: left;
+}
+
+.data {
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+.hide {
+  display: none;
+}
+
+.cert_btn {
+  margin: 15px 0 15px;
+  background: #fff;
+  /* color: #09cc7f !important; */
+  display: inline-block;
+  padding: 18px 44px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 0;
+  border: 1px solid #09cc7f;
+  /* border: 2px solid rgba(0, 0, 0, 0.6); */
+  letter-spacing: 3px;
+  text-align: center;
+  color: #034347;
+  /* color: rgba(0, 0, 0, 0.6); */
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cert_btn:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.cert_btn:hover {
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  background-color: rgba(3, 67,  71, 0.6);
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cert_btn:focus {
+  outline: none;
+}
+
+.anim {
+  width: 50%;
+  max-width: 100%;
+  transform-origin: left;
+  left: 20px;
+  margin: auto;
+}
+
+#id {
+  /* background-color: rgb(3, 67, 71); */
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 15px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+h2 {
+    color: #fff;
+}

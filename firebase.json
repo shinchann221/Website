@@ -8,6 +8,12 @@
   "hosting": {
     "public": "public",
     "cleanUrls": true,
+    
+    "rewrites": [{
+      "source": "/verifyCertificate",
+      "function": "verifyCertificate"
+    }],
+
     "redirects": [
       {
         "source": "/ordernow",
@@ -21,7 +27,7 @@
       },
       {
         "source": "/discord",
-        "destination": "https://discord.gg/PEFQaUBdsD",
+        "destination": "https://discord.gg/Ra2KMHTpCB",
         "type": 301
       }
     ],

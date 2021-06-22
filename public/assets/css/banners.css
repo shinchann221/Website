@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+.slide-banner-left {
+  margin-top: auto;
+  z-index: 100;
+  /* box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5); */
+  transform: translateX(-150%) scale(1.2);
+  transition: transform 0.7s ease;
+}
+
+.slide-banner-left.show {
+  transform: translateX(0);
+}
+
+.slide-banner-right {
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.banner1:hover .slide-banner-right {
+  transform: scale(1.05);
+}
+
+.banner1:hover .slide-banner-right.second {
+  transform: scale(1.03);
+}
+
+.slide-banner-right.show {
+  margin: auto;
+  cursor: pointer;
+  transform: translateX(0%);
+}
+
+.trapezium-right {
+  border-bottom: 45vw solid #f15413;
+  border-left: 8.5vw solid transparent;
+  height: 0;
+  width: 100%;
+}
+
+.trapezium-right-3 {
+  border-bottom: 45vw solid #57a70b;
+  border-left: 8.5vw solid transparent;
+  height: 0;
+  width: 100%;
+}
+
+.trapezium-left {
+  border-top: 45vw solid #ffa743;
+  border-right: 9.5vw solid transparent;
+  height: 0;
+  width: 100%;
+}
+
+.slogan {
+  position: absolute;
+  font-family: Century Gothic;
+  margin-top: 6vw;
+  font-size: 6vw;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 0.2s;
+}
+.slogan2 {
+  position: absolute;
+  margin-top: -86%;
+  margin-left: 10px;
+  font-family: Century Gothic;
+  font-size: 5.7vw;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 0.2s;
+}
+
+.banner1:hover .slogan {
+  text-decoration-color: #fff;
+}
+
+.banner1:hover .slogan2 {
+  text-decoration-color: #fff;
+}
+
+/* TEMP */
+ /*Homepage msg-banner*/
+ #container-banner-msg {
+  margin: 0px;
+  text-align: center;
+  font-weight: bolder;
+  color: #616161;
+  text-transform: uppercase;
+  font-size: 3.5vmin;
+  font-weight: bold;
+  padding-top: 5vw;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+#flip-word {
+  min-height: 5.5vh;
+  max-height: auto;
+  margin:1vh 1vh;
+  overflow: hidden;
+}
+
+#flip-word > div  {
+  color: #fff;
+  padding: 0.5rem 0.5rem;
+  margin:0.1rem 0.1rem;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+
+#flip-word div::before {
+  content: "knowledge";
+  animation: show-word 10s linear infinite;
+  padding: 10px 10px;
+}
+
+@keyframes show-word {
+0%{
+  content: "knowledge";
+  background: #fe7e0f;
+}
+10%{
+  content: "knowledge";
+  background: #fe7e0f;
+}
+  20% {
+    content: "technology";
+    background: #74c707;
+}
+  35% {
+      content: "technology";
+      background: #74c707;
+  }
+  45% {
+    content: "marketing";
+    background: #ffd400;
+  }
+
+  55% {
+      content: "marketing";
+      background: #ffd400;
+    }
+  65% {
+      content: "extension services";
+      background: #fe7e0f;
+  }
+  70% {
+    content: "extension services";
+    background: #fe7e0f;
+}
+85% {
+  content: "improved planning";
+  background: #74c707;
+}
+95% {
+  content: "improved planning";
+  background: #74c707;
+}
+100% {
+  content: "improved planning";
+  background: #92d638;
+}
+}
+/*Homepage msg-banner ends*/
+
