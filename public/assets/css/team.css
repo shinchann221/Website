@@ -1,0 +1,44 @@
+﻿
+@media screen and (max-width: 900px) {
+    #imgs {
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+   
+
+    #nt img {
+        /* width:30vw;
+        height:50vh;
+        margin-left: auto;
+        margin-right: auto; */
+        height: auto;
+        padding: 15%;
+      
+       padding-top: 22%;
+    
+       
+    }
+    #head p{
+        font-size: 8vw;
+        font-weight:400;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 5%;
+        white-space:no-wrap;
+     
+        text-align: center;
+    }
+
+    .farm p h1 {
+       font-size: 3vw;
+    }
+ 
+}
+
+.farm{
+    display: flex;
+    justify-content: center;
+}

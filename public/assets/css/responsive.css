@@ -1,0 +1,328 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) {
+  .kheti .text-center {
+    width:55vh;
+    }
+      .kheti .text-center >h4{
+        margin:0.4rem -0.1rem;
+        }
+        .kheti .text-center >img{
+         height:6rem
+          }
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .kheti .text-center {
+    width:54vh;
+    }
+      .kheti .text-center >h4{
+        margin:0.5rem -0.2rem;
+        }
+      /* LEADERSHIP TEAMS */
+
+.team {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  height: 100%;
+  width: 95%;
+  border: 2px solid #000;
+}
+
+.team-title {
+  font-size: 14px;
+  margin-left: -40px;
+}
+
+.team-post {
+  font-weight: bold; 
+  font-size: 12px;
+  margin-left: -40px;
+}
+
+p.team-about {
+ margin-top: 55px;
+ margin-left: -140px;
+ font-size: 13px;
+ line-height: 16px;
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  background-image: linear-gradient(to bottom right, #fff 10%, transparent 90%);
+}
+
+.team-linkdin {
+    font-size: 13px;
+}
+
+.team-body {
+  padding-left: 50px;
+  padding-top: 0px;
+}
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .kheti {
+    margin-left: 14vw;
+  
+  }
+  .kheti .text-center {
+    width:55vh !important;
+    }
+  .kheti .text-center >h4{
+  margin:0.1rem -0.2rem;
+  }
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.container {width:90vw}
+.kheti {
+  margin-left: 14vw;
+}
+.kheti .text-center {
+  width:40vh !important;
+  }
+.kheti .text-center >h4{
+margin:1.3rem -0.1rem;
+}
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (max-width: 767px) {
+.container {width:90vw}
+.kheti {
+  margin-left:  13vw;
+}
+.kheti .text-center {
+  width:49vh !important;
+  }
+  .kheti .text-center >img{
+    margin:0.5rem 0.5rem;
+    }
+/* LEADERSHIP TEAMS */
+
+.team {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    height: 100%;
+    width: 95%;
+    border: 2px solid #000;
+  }
+
+  .team-title {
+    font-size: 14px;
+    margin-left: -40px;
+  }
+
+  .team-post {
+    font-weight: bold; 
+    font-size: 12px;
+    margin-left: -40px;
+  }
+  
+  p.team-about {
+   margin-top: 55px;
+   margin-left: -140px;
+   font-size: 13px;
+   line-height: 16px;
+  }
+  
+  .team-img {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to bottom right, #fff 10%, transparent 90%);
+  }
+
+  .team-linkdin {
+      font-size: 13px;
+  }
+  
+  .team-body {
+    padding-left: 50px;
+    padding-top: 0px;
+  }
+
+  /* ABOUT US */
+
+  .card-img {
+    width: 80%;
+    margin-left: auto;
+  }
+
+  /* NT KISAN */
+
+  .kheti {
+    font-size: 5rem;
+  }
+
+  .hindi {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    margin-right: 20px;
+    margin-top: 40px;
+    color: black;
+  }
+
+  .english {
+    font-size: 25px;
+    line-height: 40px;
+    margin-right: 20px;
+    margin-top: 40px;
+    color: black;
+  }
+
+  .download {
+    font-size: 35px;
+  }
+
+  /* TESTIMONIAL */
+  .gallery-slider {
+    width: 90vw;
+    height: 90vw;
+    border-radius: 10px;
+    /* border: 3px solid #ec7b10; */
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .gallery-slides {
+    width: 500%;
+    height: 90vw;
+    display: flex;
+  }
+  
+  .gallery-slides input {
+    display: none;
+  }
+  
+  .gallery-slide {
+    width: 20%;
+    transition: 2s;
+    /* border: 3px solid #ec7b10; */
+  }
+  
+  .gallery-slide img {
+    width: 90vw;
+    height: 90vw;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual {
+    position: absolute;
+    width: 90vw;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn {
+    border: 2px solid #ec7b10;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover {
+    background: #ec7b10;
+  }
+  
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first {
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first {
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first {
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    margin-top: 91vw;
+  }
+  
+  .navigation-auto div {
+    border: 2px solid #ec7b10;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #ec7b10;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #ec7b10;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #ec7b10;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: #ec7b10;
+  }
+
+  /* INVESTORS PANEL */
+
+  .awards {
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 40px;
+    color: #000;
+    list-style-type: circle;
+  }
+
+  .partners.one {
+    height: 25vw;
+  }
+
+  .partners.two {
+    height: 9vw;
+  }
+
+  /* FARM UNCLE */
+
+  .farmImgs1 {
+    display: none;
+  }
+
+  .farmImgs2 {
+    visibility: visible;
+  }
+}
